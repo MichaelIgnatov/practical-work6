@@ -192,7 +192,6 @@ section {
 .gallery-row {
     display: flex; 
     justify-content: center;
-    margin-bottom: 20px; 
 }
 
 .gallery-image {
@@ -202,10 +201,6 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     margin: 0 10px; 
     transition: transform 0.3s; 
-}
-
-.gallery-image:hover {
-    transform: scale(1.05); 
 }
 
 .gallery-large {
@@ -253,6 +248,7 @@ footer {
 footer ul {
     margin-bottom: 0px;
 }
+
 
 @media (max-width: 1118px) {
     .quote-container {
