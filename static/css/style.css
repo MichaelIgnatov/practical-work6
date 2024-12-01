@@ -10,16 +10,17 @@ body {
 }
 
 header {
-    background-color: #c79c9c !important;
     color: #333;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
+    background-color: #e6f3ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: solid 2px rgb(103, 118, 255);
 }
 
 nav ul {
@@ -34,44 +35,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0056b3; /* Темно-синий цвет для ссылок */
+    color: #0056b3 !important;
     text-decoration: none;
     padding: 8px 12px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #e0f7fa; /* Светло-голубой фон при наведении */
     border-radius: 5px;
-    color: #003d66; /* Темно-синий цвет при наведении */
+    background-color: #b2ebf2;  
 }
 
-.intro {
-    margin-top: 50px;
-}
-
-.intro img {
+.intro-section img {
     height: 450px;
 }
 
 .container {
-    max-width: 1200px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование контейнера */
-}
-
-.qwe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.img-fluid {
-    border-radius: 10px;  
-} 
-
-.container {
-    max-width: 1200px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование контейнера */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .qwe {
@@ -81,93 +62,94 @@ nav ul li a:hover {
 }
 
 .img-fluid {
-    width: 100%; /* Изображение будет занимать всю ширину контейнера */
+    width: 100%;
     border-radius: 10px;  
 }
 
 .quote-container {
+    font-size: 20px;
     padding: 20px;
-    background-color: #f9f9f9; /* Цвет фона для цитаты */
-    border-left: 5px solid #007bff; /* Цвет левой границы */
-    margin-left: 20px; /* Отступ слева */
-    border-radius: 10px; /* Закругление углов */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для глубины */
-    max-width: 50%; /* Установка максимальной ширины цитаты */
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
 }
 
 .quote {
-    font-style: italic; /* Курсив для цитаты */
-    font-size: 1.2em; /* Размер шрифта */
-    color: #333; /* Цвет текста */
-    margin: 0; /* Убираем отступы */
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
 }
 
 .author {
-    display: block; /* Отображение автора на новой строке */
-    text-align: right; /* Выравнивание по правому краю */
-    font-weight: bold; /* Жирный шрифт для автора */
-    margin-top: 10px; /* Отступ сверху */
-    color: #007bff; /* Цвет текста автора */
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #007bff;
 }
 
 section {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .biography-section {
-    background-color: #f0f8ff; /* Светлый фон */
-    padding: 40px; /* Отступы вокруг секции */
-    border-radius: 10px; /* Закругление углов */
-    margin: 20px auto; /* Центрирование секции */
+    background-color: #f0f8ff;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
 }
 
 .biography-section h2 {
-    font-size: 2em; /* Размер шрифта заголовка */
-    color: #007bff; /* Цвет заголовка */
-    margin-bottom: 20px; /* Отступ снизу */
-    text-align: center; /* Выравнивание заголовка по центру */
-    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .biography-section p {
-    line-height: 1.6; /* Межстрочный интервал для улучшения читаемости */
-    font-size: 1.1em; /* Размер шрифта */
-    color: #333; /* Цвет текста */
-    margin: 0; /* Убираем отступы */
+    line-height: 1.6;
+    font-size: 1.1em; 
+    color: #333; 
+    margin: 0;
 }   
 
 .filmography {
-    display: flex; /* Используем Flexbox для размещения карточек */
-    flex-wrap: wrap; /* Разрешаем перенос карточек на новую строку */
-    justify-content: space-between; /* Разделяем карточки равномерно */
-    margin-top: 20px; /* Отступ сверху */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 20px;
 }
 
 .film-card {
-    background-color: #ffffff; /* Белый фон карточки */
-    border-radius: 10px; /* Закругление углов */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для глубины */
-    margin: 10px; /* Отступы между карточками */
-    text-align: center; /* Выравнивание текста по центру */
-    width: calc(30% - 20px); /* Ширина карточки с учетом отступов */
-    transition: transform 0.2s; /* Плавный переход для эффекта наведения */
+    background-color: #ffffff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+    text-align: center; 
+    width: calc(30% - 20px);
+    transition: transform 0.2s; 
 }
 
 .film-card img {
-    width: 100%; /* Изображение занимает всю ширину карточки */
-    border-top-left-radius: 10px; /* Закругление углов изображения */
-    border-top-right-radius: 10px; /* Закругление углов изображения */
+    width: 100%; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
 }
 
 .film-card p {
-    padding: 10px; /* Отступы внутри карточки */
-    margin: 0; /* Убираем отступы */
-    font-size: 1em; /* Размер шрифта */
-    color: #333; /* Цвет текста */
+    padding: 10px; 
+    margin: 0;
+    font-size: 1em; 
+    color: #333; 
 }
 
 .film-card:hover {
-    transform: scale(1.05); /* Увеличение карточки при наведении */
+    transform: scale(1.05); 
 }
 
 .filmography-section h2 {
@@ -175,35 +157,163 @@ section {
 }
 
 .legacy-section {
-    background-color: #f0f8ff; /* Светлый фон, аналогичный биографии */
-    padding: 40px; /* Отступы вокруг секции */
-    border-radius: 10px; /* Закругление углов */
-    margin: 20px auto; /* Центрирование секции */
+    background-color: #f0f8ff;
+    padding: 40px; 
+    border-radius: 10px; 
 }
 
 .legacy-section h2 {
-    font-size: 2em; /* Размер шрифта заголовка */
-    color: #007bff; /* Цвет заголовка, аналогичный биографии */
-    margin-bottom: 20px; /* Отступ снизу */
-    text-align: center; /* Выравнивание заголовка по центру */
-    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    font-size: 2em; 
+    color: #007bff; 
+    margin-bottom: 20px; 
+    text-align: center;
+    text-transform: uppercase;  
 }
 
 .legacy-section p {
-    line-height: 1.6; /* Межстрочный интервал для улучшения читаемости */
-    font-size: 1.1em; /* Размер шрифта */
-    color: #333; /* Цвет текста */
-    margin: 0; /* Убираем отступы */
-    text-align: justify; /* Выравнивание текста по ширине */
+    line-height: 1.6; 
+    font-size: 1.1em; 
+    color: #333;
+    margin: 0; 
+    text-align: justify; 
 }
+
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery-row {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.gallery-image {
+    max-width: 49%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin: 0 10px; 
+    transition: transform 0.3s; 
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); 
+}
+
+.gallery-large {
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 20px; 
+}
+
+footer {
+    background-color: #f0f8ff;
+    color: #333; 
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.footer-content {
+    margin-bottom: 20px; 
+}
+
+.footer-content h3 {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none; 
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.footer-links a:hover {
+    background-color: #b2ebf2;
+    color: #0056b3; 
+}
+
+@media (max-width: 1118px) {
+    .quote-container {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1018px) {
+    .quote-container {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 862px) {
+    .quote-container {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .quote-container {
+        font-size: 15px;
+    }
+
+    .intro-section img {
+        height: 430px;
+    }
+}
+
 @media (max-width: 768px) {
     .film-card {
-        width: calc(45% - 20px); /* Уменьшаем ширину для средних экранов */
+        width: calc(45% - 20px);
+    }
+
+    .qwe {
+        flex-direction: column;
+    }
+
+    .quote-container {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-left: none;
+        border-bottom: 5px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 80%;
+    }
+
+    .biography-section .container {
+        padding: 0px 45px;
+    }
+
+    .filmography {
+        justify-content: space-evenly;
+    }
+
+    .legacy-section .container {
+        padding: 0px 45px; 
     }
 }
 
 @media (max-width: 480px) {
     .film-card {
-        width: calc(100% - 20px); /* Полная ширина для маленьких экранов */
+        width: calc(100% - 20px);
     }
 }
