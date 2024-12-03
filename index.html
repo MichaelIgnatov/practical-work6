@@ -105,15 +105,19 @@
         <section id="gallery" class="gallery-section">
             <div class="container">
                 <div class="gallery-row">
-                    <img src="static/img/Prizrakart1.webp" srcset="static/img/PrizrakiArt2.webp 400w, static/img/Prizrakart1.webp 1200w" loading="lazy" alt="Унесённые призраками. Сцена в поезде" class="gallery-image">
-                    <img src="static/img/TotoroArt1.webp" srcset="static/img/TotoroArt2.webp 400w, static/img/TotoroArt1.webp 1200w" loading="lazy" alt="Мой сосед Тоторо. Сцена под дождём" class="gallery-image">
+                    <img src="static/img/Prizrakart1.webp" srcset="static/img/PrizrakiArt2.webp 400w, static/img/Prizrakart1.webp 1200w" loading="lazy" alt="Унесённые призраками. Сцена в поезде" class="gallery-image" onclick="openPopup(this)">
+                    <img src="static/img/TotoroArt1.webp" srcset="static/img/TotoroArt2.webp 400w, static/img/TotoroArt1.webp 1200w" loading="lazy" alt="Мой сосед Тоторо. Сцена под дождём" class="gallery-image" onclick="openPopup(this)">
                 </div>
                 <div class="gallery-row">
-                    <img src="static/img/ZamokArt2.webp" loading="lazy" alt="Ходячий замок. Замок идёт по долине" class="gallery-image gallery-large">
+                    <img src="static/img/ZamokArt2.webp" loading="lazy" alt="Ходячий замок. Замок идёт по долине" class="gallery-image gallery-large" onclick="openPopup(this)">
                 </div>
             </div>
         </section>
     </main>
+
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <footer>
         <div class="footer-content">
